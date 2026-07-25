@@ -82,6 +82,17 @@
 
   const threadTitle = (thread) => thread?.title || 'Untitled thread';
 
+  const getAuthRedirectUrl = () => {
+    if (supabaseConfig.siteUrl) return supabaseConfig.siteUrl;
+
+    const origin = window.location.origin;
+    if (origin && origin !== 'null' && !origin.startsWith('http://localhost') && !origin.startsWith('http://127.0.0.1')) {
+      return origin;
+    }
+
+    return 'https://potatopc.com';
+  };
+
   const ensureAuthModal = () => {
     let modal = document.querySelector('.auth-modal');
     if (modal) return modal;
@@ -134,7 +145,7 @@
       const submit = modal.querySelector('.auth-form__submit');
       submit?.setAttribute('disabled', 'disabled');
 
-      const redirectTo = `${window.location.origin}${window.location.pathname}`;
+      const redirectTo = getAuthRedirectUrl();
       const { error } = await supabaseClient.auth.signInWithOtp({
         email,
         options: { emailRedirectTo: redirectTo },

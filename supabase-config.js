@@ -8,4 +8,5 @@
 window.POTATO_CHARGER_SUPABASE = {
   url: 'https://jcqrwahngjsjllygohna.supabase.co',
   anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpjcXJ3YWhuZ2pzamxseWdvaG5hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ5ODIwNTIsImV4cCI6MjEwMDU1ODA1Mn0.bjgQvDN6vraAbREDx-VVB5XZcT5iojfC6-_uUX-JSK8',
+  siteUrl: 'https://potatopc.com',
 };
