@@ -50,35 +50,14 @@
           </aside>
 
           <div class="forum-content">
-            <div class="forum-section-head"><h2 class="js-topic-heading">Latest discussions</h2><span class="js-topic-count">8 conversations</span></div>
-            <div class="topic-list js-topic-list">
-              <article class="topic" data-category="games" data-replies="14" data-order="8" data-title="finally got alan wake 2 running on an mx150">
-                <div class="topic-avatar topic-avatar--purple">DR</div><div class="topic-main"><a href="#topic-alan" class="topic-title">finally got Alan Wake 2 running on an MX150 <span class="topic-tag topic-tag--orange">HOT</span></a><div class="topic-meta">Game Optimizations · deadram · 8 min ago</div></div><div class="topic-last"><b>mesaEater</b>just now</div><div class="topic-replies">14<small>replies</small></div>
-              </article>
-              <article class="topic" data-category="efficiency" data-replies="32" data-order="7" data-title="my 6 gb ram daily driver app list">
-                <div class="topic-avatar topic-avatar--orange">K9</div><div class="topic-main"><a href="#topic-apps" class="topic-title">my 6 GB RAM “daily driver” app list</a><div class="topic-meta">Lighter Apps &amp; Windows Efficiency · kitten_9000 · 23 min ago</div></div><div class="topic-last"><b>glasswire</b>4 min ago</div><div class="topic-replies">32<small>replies</small></div>
-              </article>
-              <article class="topic" data-category="configs" data-replies="6" data-order="6" data-title="low spec ini for cyberpunk 2077 phantom liberty 2gb vram">
-                <div class="topic-avatar topic-avatar--blue">MB</div><div class="topic-main"><a href="#topic-cyberpunk" class="topic-title">Low-spec .ini for Cyberpunk 2077: Phantom Liberty (2 GB VRAM)</a><div class="topic-meta">Configs, Patches &amp; Fixes · mothboy · 42 min ago</div></div><div class="topic-last"><b>r_u_n</b>11 min ago</div><div class="topic-replies">6<small>replies</small></div>
-              </article>
-              <article class="topic" data-category="builds" data-replies="9" data-order="5" data-title="can someone sanity check this 140 dollar upgrade path">
-                <div class="topic-avatar topic-avatar--green">PL</div><div class="topic-main"><a href="#topic-upgrade" class="topic-title">Can someone sanity-check this $140 upgrade path?</a><div class="topic-meta">Getting Started &amp; PC Builds · pixel_lamp · 1 hr ago</div></div><div class="topic-last"><b>nocturnals</b>19 min ago</div><div class="topic-replies">9<small>replies</small></div>
-              </article>
-              <article class="topic" data-category="games" data-replies="7" data-order="4" data-title="low preset or custom a quick guide for newer games">
-                <div class="topic-avatar topic-avatar--yellow">ME</div><div class="topic-main"><a href="#topic-presets" class="topic-title">Low preset or custom? A quick guide for newer games <span class="topic-tag">GUIDE</span></a><div class="topic-meta">Game Optimizations · mesaEater · 1 hr ago</div></div><div class="topic-last"><b>gyropalm</b>32 min ago</div><div class="topic-replies">7<small>replies</small></div>
-              </article>
-              <article class="topic" data-category="upgrades" data-replies="18" data-order="3" data-title="used rx 6400 vs gtx 1650 for an old optiplex">
-                <div class="topic-avatar topic-avatar--pink">TB</div><div class="topic-main"><a href="#topic-gpu" class="topic-title">Used RX 6400 vs GTX 1650 for an old OptiPlex?</a><div class="topic-meta">Budget Hardware Upgrades · tinybrick · 2 hr ago</div></div><div class="topic-last"><b>deadram</b>40 min ago</div><div class="topic-replies">18<small>replies</small></div>
-              </article>
-              <article class="topic" data-category="configs" data-replies="4" data-order="2" data-title="fix for stuttering when shader cache is on a hard drive">
-                <div class="topic-avatar topic-avatar--blue">SZ</div><div class="topic-main"><a href="#topic-shader" class="topic-title">Fix for stuttering when shader cache is on a hard drive</a><div class="topic-meta">Configs, Patches &amp; Fixes · softzero · 3 hr ago</div></div><div class="topic-last"><b>charon</b>1 hr ago</div><div class="topic-replies">4<small>replies</small></div>
-              </article>
-              <article class="topic" data-category="efficiency" data-replies="21" data-order="1" data-title="windows services i would never disable on a low end pc">
-                <div class="topic-avatar topic-avatar--orange">VT</div><div class="topic-main"><a href="#topic-services" class="topic-title">Windows services I would never disable on a low-end PC <span class="topic-tag topic-tag--blue">SAFETY</span></a><div class="topic-meta">Lighter Apps &amp; Windows Efficiency · vtcassette · 5 hr ago</div></div><div class="topic-last"><b>daemon</b>1 hr ago</div><div class="topic-replies">21<small>replies</small></div>
-              </article>
-              <div class="empty-topics js-empty-topics">No conversations match that search yet. Try a game title, GPU, or category.</div>
+            <div class="forum-section-head"><h2 class="js-topic-heading">Latest discussions</h2><span class="js-topic-count">0 conversations</span></div>
+            <div class="forum-status-bar">
+              <div class="forum-status-card">Only real Supabase threads render here. Sign in to start the first one.</div>
+              <button class="button load-topics js-load-topics" type="button">Connect live preview <span>↓</span></button>
             </div>
-            <button class="button load-topics js-load-topics" type="button">Load more discussions <span>↓</span></button>
+            <div class="topic-list js-topic-list"></div>
+            <div class="empty-topics js-empty-topics">No conversations yet. Start the first real thread from the composer.</div>
+            <section class="thread-pane js-thread-pane"></section>
           </div>
         </div>
       </section>
@@ -91,6 +70,8 @@
       <small>© 2026 Potato Charger. Made with care for tiny GPUs.</small>
     </footer>
     <div class="toast" role="status" aria-live="polite"><i>✓</i><span></span></div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

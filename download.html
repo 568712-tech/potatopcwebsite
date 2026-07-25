@@ -83,10 +83,11 @@
       <section class="community-promo container">
         <div class="community-copy"><p class="section-label">NOT IN THE APP — ON THE WEB</p><h2>Real people.<br /><em>Real workarounds.</em></h2><p>The Potato Charger forum is the place to swap community patches, troubleshoot a stubborn build, and trade low-end hardware tips.</p><a class="button button--dark" href="community.html">Explore the forum <span>→</span></a></div>
         <div class="community-feed">
-          <div class="forum-head"><span><i></i> community forum</span><span class="online-dot">1,842 online</span></div>
-          <article class="forum-preview"><div class="forum-avatar forum-avatar--blue">DR</div><div><p><b>finally got Alan Wake 2 running on an MX150</b> <span class="hot">HOT</span></p><small>by deadram · 14 replies · 8 min ago</small></div><span class="reply-count">14</span></article>
-          <article class="forum-preview"><div class="forum-avatar forum-avatar--orange">K9</div><div><p><b>my 6 GB RAM “daily driver” app list</b></p><small>by kitten_9000 · 32 replies · 23 min ago</small></div><span class="reply-count">32</span></article>
-          <a href="community.html" class="forum-more">See every discussion <span>→</span></a>
+          <div class="forum-feed js-forum-feed">
+            <div class="forum-head"><span><i></i> community forum</span><span class="online-dot">Live threads</span></div>
+            <div class="forum-feed__loading">Loading real Supabase threads...</div>
+            <a href="community.html" class="forum-more">See every discussion <span>→</span></a>
+          </div>
         </div>
       </section>
     </main>
@@ -98,6 +99,8 @@
       <small>© 2026 Potato Charger. Made with care for tiny GPUs.</small>
     </footer>
     <div class="toast" role="status" aria-live="polite"><i>✓</i><span></span></div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
