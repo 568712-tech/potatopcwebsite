@@ -1,0 +1,9 @@
+{
+  "name": "potato-charger-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing, download, and community forum pages for Potato Charger.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
